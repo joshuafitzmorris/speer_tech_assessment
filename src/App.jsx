@@ -1,17 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Header from './Header.jsx';
-
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./config/Routes.jsx";
 const App = () => {
   return (
-    <div className='container'>
-      <Header/>
-      <div className="container-view">Some activities should be here</div>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
 };
-
-ReactDOM.render(<App/>, document.getElementById('app'));
 
 export default App;
